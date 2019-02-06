@@ -1,0 +1,18 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:5000/eureka/
+server:
+  port: 5001
+spring:
+  application:
+    name:
+      configCenter
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/muyu66/data-center-config
+          searchPaths: config
+          username: muyu66
+          password: muyuzhouyu1M
